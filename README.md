@@ -7,3 +7,4 @@ Focus for Mar 2019:
 D3
 Vue
 Bootstrap
+Deployed on https://app.netlify.com/
