@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Emerging Trends</title>
+  <title>Population and Gas Emissions</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -171,6 +171,7 @@ blockquote:after {
     height: 80vh !important;
 }
 
+/* TABLE */
 h1{
     color: #0099FF;
 }
@@ -188,6 +189,7 @@ table{
 
 }
 
+/* TAB NAVIGATION BAR on Top of Table and Map */
 #tab_navigationBar
 {
 	background-color: lavender;
@@ -223,12 +225,12 @@ table{
       <li class="active"><a href="http://trangdoanlam.com" target="_blank">Home</a></li>
       <li><a href="http://trangdoanlam.com/data-binding" target="_blank">Data Binding</a></li>
       <li><a href="http://trangdoanlam.com/maps" target="_blank">Maps</a></li>      
-	  <li class="active"><a href="gasEmission1.html">Emerging Landscape</a></li>
+	  <li class="active"><a href="gasEmit1.html">Emerging Landscape</a></li>
 	  
     </ul>
 	
 	<ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="form_contact.html"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
 	
@@ -270,7 +272,9 @@ table{
 </div>						<!-- END OF: wrapperOutside, for everything under the navigation bar -->
 
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<!-- Added d3 local file: version 3.5.6 -->
 <script type="text/javascript" src="script/d3/d3.min.js"></script>
+
 <script type="text/javascript">
     //Load in contents of CSV file, and do things to the data.
     d3.csv("data/water_improvement_data.csv", function(error, myData) {
