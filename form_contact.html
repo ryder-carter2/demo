@@ -1,35 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Form: Comments</title>
+<title>Form: Comments</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body 
+{
+    background: rgb(14, 30, 37);
+    color: white;
+    overflow: hidden;
+}
+
+/*     h1 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    max-width: 364px;
+    padding: 24px;
+    background: white;
+    color: rgb(14, 30, 37);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .16);
+  }
+
+  a {
+    margin: 0;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 24px;
+    color: #00ad9f;
+  }
+
+  a svg {
+    position: relative;
+    top: 2px;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+    color: #007A70;
+  }
+
+  a:hover svg path{
+    fill: #007A70;
+  }
+
+  p:last-of-type {
+    margin: 0;
+  }
+  */
+#form {
+  text-align: center;
+  font-family: Helvetica, Arial, Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.0em;
+} 
+h2 {
+  margin: 4em 0 1em 0;
+  font-family: Helvetica, Arial, Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.0em;
+  text-align: center;  
+}
+p {
+  font-family: Helvetica, Arial, Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.0em;
+}
+label {
+ 
+}
+option, input {
+  width: 10em;
+  margin-right: 1em;
+}    
+</style>  
 </head>
-
+<!-- class="form-group col-md-6" -->
 <body>
+<div class="form-group col-md-3"></div> 
+
+<div class="form-group col-md-6">
+<h2>Please send comments at your convenience. <br />We would love to hear from you!</h2>    
 <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="student">Student</option>
-      <option value="professional">Professional</option>  
-      <option value="lead">Lead</option>
-      <option value="developer">Developer</option>
-      <option value="frontEnd">Front End</option>
-      <option value="backEnd">Back End</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+<p>
+  <label>Name: <input type="text" name="name" /></label>   
+</p>
+<p>
+  <label>Email: <input type="email" name="email" /></label>
+</p>
+<p>
+  <label>Role: <select name="role[]" multiple>
+    <option value="student">Student</option>
+    <option value="professional">Professional</option>  
+    <option value="lead">Lead</option>
+    <option value="programmer">Programmer</option>
+  </select></label>
+</p>
+<p>
+  <label>Message: <textarea name="message"></textarea></label>
+</p>
+<p>
+  <button type="submit">Send</button>
+</p>
 </form>
+</div>
+
+<div class="form-group col-md-3"></div> 
 
 </body>
 </html>
