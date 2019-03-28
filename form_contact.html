@@ -12,8 +12,8 @@
 body 
 {
     background: rgb(14, 30, 37);
-    color: white;
     overflow: hidden;
+    color: #fcba03; /* light blue #fbfaff light orange #ffe9a8 medium orange #fcc84e darker orange #fcba03 */
 }
 
 /*     h1 {
@@ -72,26 +72,35 @@ body
     margin: 0;
   }
   */
-#form {
+#myForm {
   text-align: center;
-  font-family: Helvetica, Arial, Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Avenir, Gotham, Futura, Helvetica, Arial, Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.0em;
+  border: 0px greenyellow solid;
+  text-align: left;
 } 
 h2 {
-  margin: 4em 0 1em 0;
-  font-family: Helvetica, Arial, Calibri, 'Trebuchet MS', sans-serif;
+  margin: 3em 0 1em 0;
+  font-family: Avenir, Gotham, Futura, Helvetica, Arial, Calibri, 'Trebuchet MS', sans-serif;
   font-size: 2.0em;
-  text-align: center;  
+  text-align: center; 
 }
 p {
-  font-family: Helvetica, Arial, Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Avenir, Gotham, Futura, Helvetica, Arial, Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.0em;
 }
 label {
- 
+  width: 16em; 
 }
-option, input {
-  width: 10em;
+input, textarea {
+  width: 15em;
+  margin-right: 1em;
+}
+textarea {
+  height: 6em;
+}
+option {
+  width: 12.64em;
   margin-right: 1em;
 }    
 </style>  
@@ -101,29 +110,36 @@ option, input {
 <div class="form-group col-md-3"></div> 
 
 <div class="form-group col-md-6">
-<h2>Please send comments at your convenience. <br />We would love to hear from you!</h2>    
-<form name="contact" method="POST" data-netlify="true">
-<p>
-  <label>Name: <input type="text" name="name" /></label>   
-</p>
-<p>
-  <label>Email: <input type="email" name="email" /></label>
-</p>
-<p>
-  <label>Role: <select name="role[]" multiple>
-    <option value="student">Student</option>
-    <option value="professional">Professional</option>  
-    <option value="lead">Lead</option>
-    <option value="programmer">Programmer</option>
-  </select></label>
-</p>
-<p>
-  <label>Message: <textarea name="message"></textarea></label>
-</p>
-<p>
-  <button type="submit">Send</button>
-</p>
-</form>
+  <h2>Please send feedback about our website. <br />We would love to hear from you!</h2>
+  <div class="form-group col-md-4"></div>
+  <div class="form-group col-md-4">
+      <div id="myForm">
+          
+      <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Name: <input type="text" name="name" /></label>   
+      </p>
+      <p>
+        <label>Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Role: <select name="role[]" multiple>
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>  
+          <option value="lead">Lead</option>
+          <option value="developer">Developer</option>
+        </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+      </form>
+      </div>
+  </div>
+  <div class="form-group col-md-4"></div>    
 </div>
 
 <div class="form-group col-md-3"></div> 
